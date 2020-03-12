@@ -13,6 +13,7 @@ class CashRegister
    @total += price * quantity
    while counter < quantity
    @items << twe
+   puts "is this working?"
    counter += 1
    end
   end 
