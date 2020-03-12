@@ -13,7 +13,7 @@ class CashRegister
    last = @itemname
    @total += price * quantity
     while counter < quantity
-      @items.push(itemname)
+      @items << itemname
       counter += 1
     end
   end 
