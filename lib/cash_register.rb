@@ -14,7 +14,7 @@ class CashRegister
    while counter < quantity
    @items << itemname
    counter += 1
-    end
+   end
   end 
   
   def apply_discount
