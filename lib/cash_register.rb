@@ -31,6 +31,5 @@ class CashRegister
   
   def void_last_transaction
     @total = -price * quantity
-    @items.slice
   end
 end 
