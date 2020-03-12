@@ -5,7 +5,7 @@ class CashRegister
     @total = 0
     @items = []
     @discount = discount
-    @prev = {}
+    @prev = 0
   end
 
   
@@ -16,6 +16,7 @@ class CashRegister
    @items << twe
    counter += 1
    end
+   @prev = price * quantity
   end 
   
   def apply_discount
@@ -27,7 +28,9 @@ class CashRegister
     return "There is no discount to apply."
     end
   end 
+  
   def void_last_transaction
-    @total = -
+    @total = -price * quantity
+    @items.slice
   end
 end 
