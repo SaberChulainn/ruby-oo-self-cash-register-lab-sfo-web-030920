@@ -13,7 +13,7 @@ class CashRegister
    last = @itemname
    @total += price * quantity
     while counter < quantity
-      @item << itemname
+      self.item.push(itemname)
       counter += 1
     end
   end 
