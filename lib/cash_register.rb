@@ -16,7 +16,7 @@ class CashRegister
    @items << twe
    counter += 1
    end
-   @prev << {quantity: 
+   @prev << {quantity1: quantity, price: price}
   end 
   
   def apply_discount
