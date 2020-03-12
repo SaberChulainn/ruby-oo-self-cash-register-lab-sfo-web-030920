@@ -11,7 +11,10 @@ class CashRegister
   end
   
   def add_item(itemname, quantity= 1)
-   until
+   counter = 0 
+    while counter < quantity
+      
+    end
   end 
   
   def apply_discount 
