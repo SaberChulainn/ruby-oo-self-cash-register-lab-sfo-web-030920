@@ -1,10 +1,11 @@
 class CashRegister 
   
-  attr_accessor :quantity, :price, :total, :discount, :items
+  attr_accessor :quantity, :price, :total, :discount, :items, :prev
   def initialize(discount=0)
     @total = 0
     @items = []
     @discount = discount
+    @prev = {}
   end
 
   
@@ -13,9 +14,9 @@ class CashRegister
    @total += price * quantity
    while counter < quantity
    @items << twe
-   puts "is this working?"
    counter += 1
    end
+   
   end 
   
   def apply_discount
