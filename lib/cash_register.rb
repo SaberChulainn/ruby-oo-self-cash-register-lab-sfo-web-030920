@@ -11,8 +11,7 @@ class CashRegister
   end
   
   def add_item(itemname, quantity= 1)
-    @item = itemname
-    @quantity _= :quantity
+   until
   end 
   
   def apply_discount 
